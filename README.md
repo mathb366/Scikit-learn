@@ -22,7 +22,7 @@ Assim, todos os atributos passam a contribuir de forma equilibrada para a distâ
 
 > Observação: a Regressão Logística também se beneficia do escalonamento (convergência mais rápida e regularização mais justa), mas o efeito é crítico para o KNN por causa da natureza baseada em distância.
 
-### 5.2 Prevenção de vazamento — como o `Pipeline` evita data leakage no `cross_val_score`?
+### Prevenção de vazamento — como o `Pipeline` evita data leakage no `cross_val_score`?
 
 O vazamento de dados (*data leakage*) ocorre quando informações do conjunto de teste (ou de validação) influenciam o treinamento. Um exemplo clássico e sutil é **ajustar o `StandardScaler` em todos os dados antes da validação cruzada**: nesse caso, a média e o desvio padrão usados no escalonamento já "viram" os dados de validação, contaminando o processo.
 
